@@ -1,21 +1,26 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View ,ImageBackground} from 'react-native';
 import ColorGenerator from './components/ColorGenerator';
 
 export default function App() {
   return (
-    <View style={styles.container}>
+   
+      <ImageBackground source={require("./assets/bg2.jpg")}
+      style={styles.container}>
+       <View >
+     
+     <StatusBar style="auto" />
      <ColorGenerator/>
-      <StatusBar style="auto" />
     </View>
+        </ImageBackground>
+       
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
     alignItems: 'center',
-    // justifyContent: 'center',
+  
   },
 });
