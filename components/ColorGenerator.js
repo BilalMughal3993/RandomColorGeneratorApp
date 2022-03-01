@@ -97,6 +97,7 @@ fontWeight:"bold",
       shadowRadius:30,
       shadowOpacity:30,
       
+      
       shadowOffset:{width:0,height:0},
       shadowColor:"#ff00dd"
     },
